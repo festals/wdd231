@@ -22,32 +22,67 @@ h1{
 
 }
 
-nav ul{
-    background-color: aliceblue;
-    margin: 0 auto;
-    max-width: 800px;
-    display: flex;
-    justify-content : space-evenly;
+#menu {
+    display : block;
+    font-size : 2rem;
+    text-decoration : none;
+    padding : 0.5rem 1rem;
+    position : absolute;
+    top : 0;
+    right : 0;
 }
 
-nav ul li {
+#menu::before {
+    content : "≡";
+    color: black;
+}
+
+.navigation {
+    display : flex;
+    flex-direction : column;
     list-style : none;
 }
 
-nav a{
-    display:block;
-    color: rgb(2, 46, 82);
-    text-align:center;
-    padding: 1rem;
-    text-decoration: none;
-    flex: 1 1 100%;
+.navigation li {
+    display : none;
 }
 
-nav a:hover{
-    background-color: #fff;
-    color:steelblue; 
-    font-weight: bold;
+.navigation a {
+    display : block;
+    text-decoration : none;
+    color : black;
+    text-align : center;
+    padding : 0.75rem;
+    font-weight : 700;
+    transition : 0.5s;
 }
+
+.navigation a:hover {
+    text-decoration :overline;
+    text-decoration-color: steelblue;
+}
+
+.show {
+    display : flex;
+    flex-direction : column;
+}
+
+.show li {
+    display : block;
+}
+
+#menu.show::before {
+    content : "X";
+    position : absolute;
+    top : 0;
+    right : 0;
+    padding : 1rem;
+}
+
+.navigation.show + h1, h1.show {
+    display : none;
+}
+
 
 main {
     background: #fff;
@@ -57,6 +92,26 @@ main {
     height: 100vh;
     grid-template-columns : 2fr 1fr;
     gap : 20px;
+}
+
+h2{
+    background-color: steelblue;
+    grid-column : 1 / 4;
+    text-align : center;
+    border-radius : 10px;
+}
+
+.card {
+    border: 1.5px solid black ;
+    padding: 1rem;
+    margin: 5px;
+    display:flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+figcaption{
+    text-align: center;
 }
 
 footer {
