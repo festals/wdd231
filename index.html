@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home page</title>
-        <meta name="description" content="Home page for chamber of commerce web site">
-        <meta name="author" content="Sophie Festal">
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/index-large.css">
-        <script defer src="scripts/getdates.js"></script>
-        <script defer src="scripts/home.js"></script>
-    </head>
-    <body>
-      <header>
-        <h1>Sophie C. C. Festal</h1>
-        <a id="menu"></a>
-        <nav>
-            <ul class="navigation">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Chamber</a></li>
-              <li><a href="#">GitHub Profile</a></li>
-              <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-            </ul>
-        </nav>     
-      </header>
-      <main>
-        <section class="card">
-          <h2>Course Work</h2>
-          <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home page</title>
+      <meta name="description" content="Home page for chamber of commerce web site">
+      <meta name="author" content="Sophie Festal">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles/index.css">
+      <link rel="stylesheet" href="styles/index-large.css">
+      <script defer src="scripts/getdates.js"></script>
+      <script defer src="scripts/home.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Sophie C. C. Festal</h1>
+      <a id="menu"></a>
+      <nav>
+          <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
           </ul>
-        </section>
-        <section class="card">
-          <h2>Paris, France</h2>
-          <figure>
-            <img id="flag" src="images/eiffel.webp" alt="The eiffel tower by night">
-            <figcaption>The Eiffel Tower, Paris</figcaption>
-          </figure>        
-        </section>      
-      </main>
-      <footer>
-        <p>
-          ©️<span id="currentyear"></span> | Sophie Festal | FRANCE
+      </nav>     
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Course Work</h2>
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </section>
+      <section class="card">
+        <h2>Paris, France</h2>
+        <figure>
+          <img id="flag" src="images/eiffel.webp" alt="The eiffel tower by night">
+          <figcaption>The Eiffel Tower, Paris</figcaption>
+        </figure>        
+      </section>
+      <section>
+        <h2>Web and Computer Programming Certificate</h2>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        ©️<span id="currentyear"></span> | Sophie Festal | FRANCE
       </p>
       <p>Last modification: <span id="lastModified"></span></p>
-      </footer>  
-    </body>
+    </footer>  
+  </body>
 </html>
