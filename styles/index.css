@@ -2,10 +2,9 @@ body {
     font-family: "Roboto";
     font-weight: 400;
     background-color : #f8f9fa;
-    max-width : 740px;
+    max-width : 640px;
     margin : 0 auto;
     display : grid;
-    grid-template-rows : auto 1fr auto auot auto;
 }
 
 header{
@@ -13,10 +12,18 @@ header{
     text-align: center;
 }
 
-h1{
+header img{
+    height:150px;
+    float: left;
+    margin-left: 40px;
+    padding-bottom: 50px;
+}
+
+header h1{
     font-weight: 400;
     display:flex;
     justify-content: center;
+    padding-top:50px;
 }
 
 #menu {
@@ -88,9 +95,7 @@ main {
     background: #fff;
     padding: 1rem;
     display: grid;
-
-    height: 100vh;
-    gap : 20px;
+    gap : 10px;
 }
 
 h2{
@@ -103,21 +108,60 @@ h2{
 section{
     border: 1.5px solid black ;
     padding: 1rem;
-    margin: 5px;
+    margin: 3px;
     background-color: aliceblue;
 }
 
 img{
     height: 200px;
-    padding-left: 160px;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
 
 figcaption{
     text-align: center;
 }
 
+#tags {
+    display : flex;
+    margin : auto;
+    justify-content : center;
+}
+    
+#tags a{
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    margin:5px;
+    padding: 10px;
+    text-decoration: none;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+#tags a:hover{
+    background-color: steelblue;
+}
+
+.completed, .incomplete {
+    margin : 10px;
+    padding : 0.5rem;
+    text-align: center;
+}
+
+.completed{
+    background-color: rgb(58, 230, 172);
+}
+
+.incomplete{
+    background-color: rgb(240, 133, 133)
+}
+
+#credits{
+    text-align: center;
+}
+
 footer {
-    grid-row: 3/4;
     text-align : center;
     background-color : steelblue;
 }
