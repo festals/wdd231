@@ -164,4 +164,5 @@ figcaption{
 footer {
     text-align : center;
     background-color : steelblue;
+    padding: 2rem;
 }
