@@ -1,0 +1,41 @@
+@media (min-width: 640px) {
+
+    #menu {
+        display : none;
+    }
+
+    .navigation {
+        display : flex;
+        flex-direction : row;
+        padding-right : 2rem;
+    }
+
+    .navigation li {
+        display : flex;
+        flex : 0 0 auto;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap:10px;
+    }
+
+    section, .members{
+        margin:0;
+    }
+
+
+    .hero,h1,.members{
+        grid-column: 1/4;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        align-items: center;
+
+    }
+
+}

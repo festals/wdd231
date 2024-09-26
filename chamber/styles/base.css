@@ -143,7 +143,3 @@ footer{
     display: flex;
     flex-direction: column;
 }
-
-.media{
-    justify-content: space-evenly;
-}
