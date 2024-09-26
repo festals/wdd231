@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Directory page for chamber of commerce web site for WDD231">
+    <meta name="author" content="Sophie Festal">
+    <meta property="og:title" content="Directory page for a Chamber of Commerce">
+    <meta property="og:type" content="web site">
+    <meta property="og:image" content="https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg">
+    <meta property="og:url" content="https://festals.github.io/wdd231/chamber.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/bases-large.css">
+    <link rel="icon" href="../favicon.ico">
+    <script defer src="../scripts/getdates.js"></script>
+    <script defer src="../scripts/home.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/paris_logo.jpg">
+        <h1>PARIS</h1>
+        <p>Chamber of Commerce</p>
+        <a id="menu"></a>
+        <nav>
+            <ul class="navigation">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">Directory</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>     
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <img src="images/hero.jpg" alt="Paris, France" >
+            </picture>
+        </div>
+
+        <h1>Home</h1>
+        <section>
+            <h2>Events</h2>
+        </section>
+
+        <section>
+            <h2>Current Weather</h2>
+            <div class="icon">
+                <img class="icon-image" src="images/weather-icon.svg" alt="weather icon" width="100" height="100">
+            </div>
+                <p>64°F</p>
+                <p>Rainy</p>
+                <p>High: 66°</p>
+                <p>Low: 55°</p>
+                <p>Humidity: 81%</p>
+                <p>Sunrise: 7:43am</p>
+                <p>Sunset: 7:38pm</p>
+        </section>
+
+        <section class="temp">
+            <h2>Weather Forecast</h2>
+            <h3>Today:</h3>
+                <p>64°F</p>
+            <h3>Friday:</h3>
+                <p>61°F</p>
+            <h3>Saturday:</h3>
+                <p>59°F</p>
+        </section>
+
+        <section class="members">
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Paris Chamber of Commerce</p>
+        <p>6 Bld De La Liberté</p> 
+        <p>Paris, France 75013</p> 
+        <p>info@pariscc.fr</p> 
+        <p>(36)1-64-62-02-19</p> 
+
+        <div class="media">
+            <a href="https://youtube.com">
+                <img src="images/youtube.png" alt="Youtube logo">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter_logo.webp" alt="Twitter logo">
+            </a>
+            <a href="https://LinkedIn.com">
+                <img src="images/linkedin.png" alt="Linkedin logo">
+            </a>
+        </div>
+
+        <p>WDD231 Class Project</p>
+        <p>Sophie Festal</p>
+        <p>
+            ©️<span id="currentyear"></span> Paris Chamber of Commerce
+        </p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>

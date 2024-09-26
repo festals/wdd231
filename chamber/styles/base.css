@@ -1,0 +1,93 @@
+:root{
+    --green: #23947a;
+    --light-blue:  #81b9d1;
+  
+    --heading-font: 'Oswald';
+    --paragraph-font: 'Lato';
+}
+
+header{
+    background-color: var(--green);
+    display:flex;
+    padding:5px;
+}
+
+header img{
+    flex-wrap: wrap;
+    width: 100px;
+    margin:5px;
+    padding-right: 15px;
+}
+
+header h1{
+    padding-right:100px;
+}
+
+#menu {
+    display : block;
+    font-size : 2rem;
+    text-decoration : none;
+    padding : 0.5rem 1rem;
+    position : absolute;
+    top : 0;
+    right : 0;
+}
+
+#menu::before {
+    content : "≡";
+    color: black;
+}
+
+.navigation {
+    display : flex;
+    flex-direction : column;
+    list-style : none;
+}
+
+.navigation li {
+    display : none;
+}
+
+.navigation a {
+    display : block;
+    text-decoration : none;
+    color : black;
+    text-align : center;
+    padding : 0.75rem;
+    font-weight : 700;
+    transition : 0.5s;
+}
+
+.navigation a:hover {
+    text-decoration :overline;
+    text-decoration-color: steelblue;
+}
+
+.show {
+    display : flex;
+    flex-direction : column;
+}
+
+.show li {
+    display : block;
+}
+
+#menu.show::before {
+    content : "X";
+    position : absolute;
+    top : 0;
+    right : 0;
+    padding : 1rem;
+}
+
+.navigation.show + h1, h1.show {
+    display : none;
+}
+
+.active::before { 
+	content: "🌟"; 
+}
+
+.hero img{
+    width: 800px;
+}
