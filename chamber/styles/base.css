@@ -1,5 +1,5 @@
 :root{
-    --green: #23947a;
+    --blue: aliceblue;
     --light-blue:  #81b9d1;
   
     --heading-font: 'Oswald';
@@ -7,20 +7,25 @@
 }
 
 header{
-    background-color: var(--green);
+    background-color: var(--light-blue);
     display:flex;
-    padding:5px;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding:10px;  
 }
 
 header img{
-    flex-wrap: wrap;
-    width: 100px;
-    margin:5px;
-    padding-right: 15px;
+    width: 80px;
+    height: 80px;
+    margin:10px;
+    border-radius: 15%;
 }
 
-header h1{
-    padding-right:100px;
+header .head{
+    display: flex;
+    gap:25px;
+    align-items: center;
+    line-height: 0.5;
 }
 
 #menu {
@@ -80,14 +85,53 @@ header h1{
     padding : 1rem;
 }
 
-.navigation.show + h1, h1.show {
-    display : none;
-}
-
 .active::before { 
 	content: "🌟"; 
 }
 
+main{
+    display: block;
+}
+
 .hero img{
-    width: 800px;
+    width : 100%;
+    background-size : cover;
+    background-position : center;
+    padding-bottom : 0%;
+    max-height : 270px;
+    object-fit : cover;
+}
+
+section{
+    margin:10px;
+    background-color: aliceblue;
+    display : flex;
+    flex-direction : column;
+    height : 100%;
+}
+
+section h2{
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: center;    
+}
+
+.icon{
+    display:flex;
+    flex-direction: row;
+    padding:10px;
+}
+
+.icon p{
+    padding-left:20px;
+}
+
+footer{
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+.media{
+    justify-content: space-evenly;
 }

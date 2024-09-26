@@ -21,10 +21,14 @@
 </head>
 <body>
     <header>
-        <img src="images/paris_logo.jpg">
-        <h1>PARIS</h1>
-        <p>Chamber of Commerce</p>
-        <a id="menu"></a>
+        <div class="head">
+            <img src="images/paris_logo.jpg" alt="paris business center">
+            <div>
+                <h1>PARIS</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <a id="menu"></a> 
         <nav>
             <ul class="navigation">
               <li><a href="#" class="active">Home</a></li>
@@ -43,45 +47,42 @@
         </div>
 
         <h1>Home</h1>
-        <section>
+        <section class="event">
             <h2>Events</h2>
         </section>
 
         <section>
             <h2>Current Weather</h2>
             <div class="icon">
-                <img class="icon-image" src="images/weather-icon.svg" alt="weather icon" width="100" height="100">
+                <img class="icon-image" src="images/rainy-day.png" alt="weather icon" width="100" height="100">
+                <p><b>64°F</b>
+                <br>Rainy
+                <br>High: 66°
+                <br>Low: 55°
+                <br>Humidity: 81%
+                <br>Sunrise: 7:43am
+                <br>Sunset: 7:38pm</p>
             </div>
-                <p>64°F</p>
-                <p>Rainy</p>
-                <p>High: 66°</p>
-                <p>Low: 55°</p>
-                <p>Humidity: 81%</p>
-                <p>Sunrise: 7:43am</p>
-                <p>Sunset: 7:38pm</p>
         </section>
 
         <section class="temp">
             <h2>Weather Forecast</h2>
-            <h3>Today:</h3>
-                <p>64°F</p>
-            <h3>Friday:</h3>
-                <p>61°F</p>
-            <h3>Saturday:</h3>
-                <p>59°F</p>
+            <p>Today: <b>64°F</b></p>
+            <p>Friday: <b>61°F</b></p>
+            <p>Saturday: <b>59°F</b></p>
         </section>
 
         <section class="members">
-
+            <div class="card"></div>
         </section>
     </main>
 
     <footer>
-        <p>Paris Chamber of Commerce</p>
-        <p>6 Bld De La Liberté</p> 
-        <p>Paris, France 75013</p> 
-        <p>info@pariscc.fr</p> 
-        <p>(36)1-64-62-02-19</p> 
+        <p><b>Paris Chamber of Commerce</b>
+        <br>6 Bld De La Liberté 
+        <br>Paris, France 75013
+        <br>info@pariscc.fr 
+        <br>(36)1-64-62-02-19</p> 
 
         <div class="media">
             <a href="https://youtube.com">
@@ -95,12 +96,10 @@
             </a>
         </div>
 
-        <p>WDD231 Class Project</p>
-        <p>Sophie Festal</p>
-        <p>
-            ©️<span id="currentyear"></span> Paris Chamber of Commerce
-        </p>
-        <p>Last modification: <span id="lastModified"></span></p>
+        <p>WDD231 Class Project
+        <br>Sophie Festal
+        <br>©️<span id="currentyear"></span> Paris Chamber of Commerce
+        <br>Last modification: <span id="lastModified"></span></p>
     </footer>
     
 </body>
