@@ -126,6 +126,18 @@ section h2{
     padding-left:20px;
 }
 
+.toggleView{
+	padding: 0.5rem;
+	text-align: center;
+}
+
+button{
+    padding: 1rem;
+    margin:5px;
+    font-weight: 700;
+    border: 2px solid var(--light-blue);
+}
+
 footer{
     background-color: var(--light-blue);
     display: flex;

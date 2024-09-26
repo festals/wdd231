@@ -1,0 +1,66 @@
+{"memebers": [
+    {
+        "name":"CafeMocha",
+        "address":"12 Rue Laurent Savart, Paris 75020",
+        "phone":"(33)1-22-95-87-04",
+        "website": "https://cafemocha.com/",
+        "image":"cafemocha.png",
+        "membershipLevel":"1",
+        "email":"info@cafemocha.com"
+    },        
+    {
+        "name":"BookNook",
+        "address":"54 Boulevard Desgranges, Paris 75008",
+        "phone":"(33)1-95-78-15-02",
+        "website": "https://booknook.com/",
+        "image":"booknook.png",
+        "membershipLevel":"1",
+        "email":"info@booknook.com"
+    },        
+    {
+        "name":"Maison du Livre",
+        "address":"12 Rue Brémontier,Paris 75017",
+        "phone":"(33)1-24-65-75-32",
+        "website": "https://maisondulivre.com/",
+        "image":"maisondulivre.png",
+        "membershipLevel":"2",
+        "email":"info@maisondulivre.com"
+    },        
+    {
+        "name":"Brasserie Ducard",
+        "address":"21b Rue Michel le Comte, Paris 75003",
+        "phone":"(33)1-89-82-02-23",
+        "website": "https://maisondulivre.com/",
+        "image":"brasserieducard.png",
+        "membershipLevel":"2",
+        "email":"info@brasserieducard.com"
+    },        
+    {
+        "name":"PaperTech",
+        "address":"13 Rue Richomme, Paris 75018",
+        "phone":"(33)1-21-02-36-95",
+        "website": "https://papertech.com/",
+        "image":"papertech.png",
+        "membershipLevel":"3",
+        "email":"info@papertech.com"
+    },       
+    {
+        "name":"GRAPHIX",
+        "address":"24 Boulevard Saint-Michel, Paris 75006",
+        "phone":"(33)1-56-47-48-50",
+        "website": "https://graphix.com/",
+        "image":"graphix.png",
+        "membershiLevel":"2",
+        "email":"info@graphix.com"
+    },        
+    {
+        "name":"DriveArena",
+        "address":"12 Rue Faidherbe, Paris 75011",
+        "phone":"(33)1-25-45-02-07",
+        "website": "https://drivearena.com/",
+        "image":"drivearena.png",
+        "membershipLevel":"3",
+        "email":"info@drivearena.com"
+    }
+]
+}
