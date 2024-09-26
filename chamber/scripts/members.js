@@ -2,14 +2,13 @@ document.addEventListener("DOMContentLoaded", async() =>{
     const cards = document.getElementById("card");
 
     async function fetchMembers() {
-        const reponse = await fetch('./data/memebers.json');
-        const members = await reponse.json();
+        const response = await fetch('./data/members.json');
+        const members = await response.json();
         return members;
     }
 
     function renderMembers(members) {
         cards.innerHTML="";
-        cards.className = isGridView ? 'grid-view' : 'list-view';
 
         members.foreach(member => {
             const memberCard = document.createElement("div");
@@ -28,7 +27,26 @@ document.addEventListener("DOMContentLoaded", async() =>{
     }
 
     const members = await fetchMembers();
-    let isGridView = true;
-    renderMembers(members, isGridView);
+    renderMembers(members);
 });
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+
 
