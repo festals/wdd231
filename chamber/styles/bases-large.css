@@ -4,6 +4,10 @@
         display : none;
     }
 
+    nav{
+        grid-template-rows: 1fr;
+    }
+
     .navigation {
         display : flex;
         flex-direction : row;
@@ -26,9 +30,17 @@
         margin:0;
     }
 
-
     .hero,h1,.members{
         grid-column: 1/4;
+    }
+
+    .grid {
+        grid-template-columns : repeat(auto-fit,minmax(400px,1fr));
+    }
+
+    .list div {
+        display : grid;
+        grid-template-columns : repeat(auto-fit,minmax(200px,1fr));
     }
 
     footer{

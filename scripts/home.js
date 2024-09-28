@@ -1,11 +1,11 @@
 const hamburger = document.querySelector('#menu');
-const nav = document.querySelector('.navigation');
+const nav = document.getElementById('animateme');
 const h1 = document.querySelector('h1');
 
 function menu (){
-    hamburger.classList.toggle('show');
-    nav.classList.toggle('show');
-    h1.classList.toggle('show');
+    hamburger.classList.toggle('open');
+    nav.classList.toggle('open');
+    h1.classList.toggle('open');
 }
 
 hamburger.addEventListener('click',menu);

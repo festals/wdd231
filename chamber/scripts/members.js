@@ -8,7 +8,7 @@ async function getData() {
     displayMembers(data.members);
 }
 
-getData();
+getData(url);
 
 const displayMembers = (members) => {
     cards.innerHTML="";
@@ -23,15 +23,16 @@ const displayMembers = (members) => {
                     <p>${member.address}</p>
                     <p>${member.phone}</p>
                     <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-                    <p>Membership Level: ${member.membershipLevel}</p>
-                    <p>${member.email}</p> `;
+                    `;
         cards.appendChild(card);
     });
 };
-
+//  <p>Membership Level: ${member.membershipLevel}</p> // not sure I need to put it on screen
+//  <p>${member.email}</p>  
 
 const list = document.getElementById("list");
 const grid = document.getElementById("grid");
+
 
 list.addEventListener("click", () => {
 	cards.classList.add("list");
@@ -39,7 +40,7 @@ list.addEventListener("click", () => {
 });
 
 grid.addEventListener("click", () => {
-	cards.classList.add("grid");
+    cards.classList.add("grid");
 	cards.classList.remove("list");
 });
 
