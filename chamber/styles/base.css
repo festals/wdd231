@@ -1,6 +1,7 @@
 :root{
     --blue: aliceblue;
     --light-blue:  #81b9d1;
+    --lighter-blue:  #afdcef;
   
     --heading-font: 'Oswald';
     --paragraph-font: 'Lato';
@@ -126,6 +127,10 @@ section h2{
     padding-left:20px;
 }
 
+.members{
+    padding:5px;
+}
+
 .toggleView{
 	padding: 0.5rem;
 	text-align: center;
@@ -138,21 +143,46 @@ button{
     border: 2px solid var(--light-blue);
 }
 
-.members .cards {
+.grid{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
 }
 
-.members div img{
+.grid div{
+    border: 2px solid var(--light-blue);
+}
+
+.grid img{
     width: 100px;
     border: 2px solid #1c1919;
 }
 
-.members div{
-    margin: 5px;
+.list {
+	display: flex;
+	flex-direction: column;
 }
+
+.list div {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list div > * {
+	margin: 0 1rem;
+}
+
+.list div img{
+	display: none; 
+}
+
+.list div:nth-child(even) {
+	background-color: var(--lighter-blue);
+}
+
 
 footer{
     background-color: var(--light-blue);

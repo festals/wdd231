@@ -33,9 +33,14 @@ const displayMembers = (members) => {
 const list = document.getElementById("list");
 const grid = document.getElementById("grid");
 
-list.addEventListener("click", showList);
+list.addEventListener("click", () => {
+	cards.classList.add("list");
+	cards.classList.remove("grid");
+});
 
-function showList(){
-    cards.classList.add("list");
-    cards.classList.remove("grid");
-}
+grid.addEventListener("click", () => {
+	cards.classList.add("grid");
+	cards.classList.remove("list");
+});
+
+
