@@ -173,7 +173,7 @@ p a{
 }
 
 .grid div{
-    border: 2px solid var(--light-blue);
+    border: 1px solid var(--light-blue);
 }
 
 .grid img{
@@ -186,6 +186,10 @@ p a{
 .list {
 	display: flex;
 	flex-direction: column;
+}
+
+.list p{
+    text-align: justify;
 }
 
 .list div {
@@ -206,7 +210,6 @@ p a{
 .list div:nth-child(even) {
 	background-color: var(--lighter-blue);
 }
-
 
 footer{
     background-color: var(--light-blue);
