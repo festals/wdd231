@@ -138,6 +138,22 @@ button{
     border: 2px solid var(--light-blue);
 }
 
+.members .cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.members div img{
+    width: 100px;
+    border: 2px solid #1c1919;
+}
+
+.members div{
+    margin: 5px;
+}
+
 footer{
     background-color: var(--light-blue);
     display: flex;

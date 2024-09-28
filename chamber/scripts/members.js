@@ -1,52 +1,41 @@
-document.addEventListener("DOMContentLoaded", async() =>{
-    const cards = document.getElementById("card");
 
-    async function fetchMembers() {
-        const response = await fetch('./data/members.json');
-        const members = await response.json();
-        return members;
-    }
+const url = "data/members.json";
+const cards = document.getElementById("cards");
 
-    function renderMembers(members) {
-        cards.innerHTML="";
-
-        members.foreach(member => {
-            const memberCard = document.createElement("div");
-
-            memberCard.innerHTML=`
-                <img src ="./images/${member.image}" alt="${member.name}">
-                <h2>${member.name}</h2>
-                <p>${member.address}</p>
-                <p>${member.phone}</p>
-                <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-                <p>Membership Level: ${member.membershipLevel}</p>
-                <p>${member.email}</p>
-            `;
-            cards.appendChild(memberCard);
-        });
-    }
-
-    const members = await fetchMembers();
-    renderMembers(members);
-});
-
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
-
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+async function getData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayMembers(data.members);
 }
 
+getData();
 
+const displayMembers = (members) => {
+    cards.innerHTML="";
+    
+    members.forEach((member) =>{
+        let card = document.createElement('div');
+        card.classList.add("card");
+
+        card.innerHTML=`
+                    <img src ="images/${member.image}" alt="${member.name}">
+                    <p><b>${member.name}</b></p>
+                    <p>${member.address}</p>
+                    <p>${member.phone}</p>
+                    <p><a href="${member.website}" target="_blank">${member.website}</a></p>
+                    <p>Membership Level: ${member.membershipLevel}</p>
+                    <p>${member.email}</p> `;
+        cards.appendChild(card);
+    });
+};
+
+
+const list = document.getElementById("list");
+const grid = document.getElementById("grid");
+
+list.addEventListener("click", showList);
+
+function showList(){
+    cards.classList.add("list");
+    cards.classList.remove("grid");
+}
