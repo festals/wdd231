@@ -4,6 +4,14 @@
         display : none;
     }
 
+    header{
+        display: block;
+    }
+
+    header nav {
+        background-color: #afdcef; 
+    }
+
     nav{
         grid-template-rows: 1fr;
     }
@@ -16,7 +24,7 @@
 
     .navigation li {
         display : flex;
-        flex : 0 0 auto;
+        flex : 1 0 auto;
     }
 
     main{
