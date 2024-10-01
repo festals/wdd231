@@ -38,7 +38,7 @@
         margin:0;
     }
 
-    .hero,h1,.members{
+    .hero,h1,.members, #call{
         grid-column: 1/4;
     }
 
