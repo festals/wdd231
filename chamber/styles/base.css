@@ -15,6 +15,10 @@ header{
     padding:10px;  
 }
 
+h1{
+    padding-left:5px;
+}
+
 header img{
     width: 80px;
     height: 80px;
