@@ -18,7 +18,7 @@
     <link rel="icon" href="../favicon.ico">
     <script defer src="../scripts/getdates.js"></script>
     <script defer src="../scripts/home.js"></script>
-    <script defer src="scripts/members.js"></script>
+    <script defer src="scripts/members-level.js"></script>
     <script defer src="scripts/api-weather.js"></script>
 </head>
 <body>
@@ -50,7 +50,7 @@
         <h1>Home</h1>
         <div id="call">
             <nav class ="CTA">
-                <a href="join.html">Join the Chamber of Commerce</a>
+                <a href="join.html">*** Join the Chamber of Commerce ***</a>
             </nav>
         </div>
         <section class="event">
@@ -63,7 +63,7 @@
         <section class="tempToday">
             <h2>Current Weather</h2>
             <div class="icon">
-                <img id="weather-icon" src="" alt="" width="100" height="100" loading="lazy">
+                <div id="weather-icon"></div>
                 <div id="current-temp"></div>
             </div>
         </section>
@@ -74,9 +74,10 @@
             </div>
         </section>
 
-        <section class="members">
-
-        </section>
+        <div class="members">
+            <article id="cards">
+            </article>
+        </div>
 
     </main>
 

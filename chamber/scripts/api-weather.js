@@ -2,8 +2,8 @@ const currentTemp = document.getElementById("current-temp");
 const weatherIcon = document.getElementById("weather-icon");
 const forecast = document.getElementById("forecast");
 
-const url = "https://api.openweathermap.org/data/2.5/weather?lat={48.86}&lon={2.35}&appid={37c35753f34f3a37825f8d6a42ba3c16}&units=metric";
-const urlForecast ="https://api.openweathermap.org/data/2.5/forecast?lat={48.86}&lon={2.35}&appid={37c35753f34f3a37825f8d6a42ba3c16}&units=metric";
+const url = "https://api.openweathermap.org/data/2.5/weather?lat={48.86}&lon={2.35}&units=metric&appid={37c35753f34f3a37825f8d6a42ba3c16}";
+const urlForecast ="https://api.openweathermap.org/data/2.5/forecast?lat={48.86}&lon={2.35}&units=metric&appid={37c35753f34f3a37825f8d6a42ba3c16}";
 
 async function apiFetch() {
     try{
@@ -43,7 +43,7 @@ const displayWeather = (data) => {
     currentTemp.innerHTML = ""; 
 
     const icon = document.createElement("img");
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     const desc = data.weather[0].description;
     const temp = document.createElement("p");
     const weather = document.createElement("p");
@@ -55,6 +55,8 @@ const displayWeather = (data) => {
 
     icon.setAttribute("src", iconsrc);
     icon.setAttribute("alt", desc);
+    icon.setAttribute("loading", "lazy");
+    icon.setAttribute("width", "100");
 
     temp.innerHTML=`${data.main.temp}&deg;C`;
     weather.innerHTML= `${data.weather[0].description}`;
@@ -76,7 +78,7 @@ const displayWeather = (data) => {
     const today = document.createElement("p");
     today.innerHTML = `Today <strong>${data.main.temp}&deg;C</strong>`
     forecast.appendChild(today);
-  }
+}
 
 const displayForecast = (data) => {
     const tomorrow = document.createElement("p");
