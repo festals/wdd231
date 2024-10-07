@@ -136,21 +136,47 @@ section h2{
 
 
 /*call to action*/
-.CTA{
+
+.hero{
+    height : 50rem;
+    background-image : url(../images/hero.jpg);
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position : center;
+    margin-bottom : 2rem;
+    position : relative;
+    height: 400px;
+}
+
+#call{
+    position : absolute;
+    width : 120%;
+    height : 120%;
+    display : flex;
+    flex-direction : column;
+    justify-content:center;
+    align-items : center;
+    padding : 2rem;
+    text-align : center;
+    gap : 3rem;
+}
+/* .CTA{
     display: block; 
-    background-color: var(--blue);
     text-align: center; 
     font-weight: bold; 
     font-size: 150%; 
     line-height: 100px; 
     margin: 10px; 
-}
+    position: relative;
+} */
 .CTA a {
     color:black;
+    font-weight: 700;
     background-color: var(--light-blue);
     text-decoration: none;
     padding:20px;
     border-radius: 20px;
+    position:absolute;
 }
 .CTA a:hover {
     background-color: var(--lighter-blue);
