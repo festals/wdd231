@@ -19,8 +19,8 @@ const displayMembers = (members) => {
     cards.innerHTML="";
     
     members.forEach((member) =>{
-        let card = document.createElement('div');
-        card.classList.add("card");
+        let fCard = document.createElement("div");
+        fCard.classList.add("f-card");
         const level = document.createElement("p");
 
         level.innerHTML =`Membership level: ${member.membershipLevel}`;
@@ -31,14 +31,14 @@ const displayMembers = (members) => {
                 level.innerHTML = `Membership level: Silver`
             }
 
-        card.innerHTML=`
+        fCard.innerHTML=`
                     <img src ="images/${member.image}" alt="${member.name}">
                     <p><b>${member.name}</b></p>
                     <p>${member.address}</p>
                     <p>${member.phone}</p>
                     <p><a href="${member.website}" target="_blank">${member.website}</a></p>
                     `;
-        card.appendChild(level);
-        cards.appendChild(card);
+        fCard.appendChild(level);
+        cards.appendChild(fCard);
     });
 };

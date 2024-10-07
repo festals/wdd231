@@ -111,17 +111,17 @@ main{
     display: block;
 }
 
-.hero img{
+/* .hero img{
     width : 100%;
     background-size : cover;
     background-position : center;
     padding-bottom : 0%;
     max-height : 270px;
     object-fit : cover;
-}
+} */
 
 section{
-    margin:10px;
+    margin:5px;
     background-color: aliceblue;
     display : flex;
     flex-direction : column;
@@ -135,7 +135,8 @@ section h2{
 }
 
 
-/*call to action*/
+
+/*call to action on banner */
 
 .hero{
     height : 50rem;
@@ -172,7 +173,7 @@ section h2{
 .CTA a {
     color:black;
     font-weight: 700;
-    background-color: var(--light-blue);
+    background-color: rgb(250, 177, 41);
     text-decoration: none;
     padding:20px;
     border-radius: 20px;
@@ -224,22 +225,25 @@ button:hover {
     transition : background-color 0.3s;
 }
 
-.grid{
+.grid, .filtered-members{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 5px;
+	grid-gap: 10px;
     text-align: center;
+    padding: 10px;
 }
 
-.grid div{
-    border: 1px solid var(--light-blue);
-}
 
-.grid img{
+.grid img, .filtered-members img{
     width: 100px;
     border: 2px solid #1c1919;
     box-shadow : 0 0 10px #333;
     margin:10px;
+}
+
+
+.card, .f-card{
+    box-shadow : 0 0 10px  rgb(250, 177, 41);
 }
 
 .list {
@@ -256,6 +260,8 @@ button:hover {
 	grid-template-columns: 2fr 1fr 1fr 1fr;
 	margin: 0;
 	padding: 0.25rem;
+    box-shadow: none;
+    border: 2px solid var(--light-blue);
 }
 
 .list div > * {
@@ -276,4 +282,5 @@ footer{
     background-color: var(--light-blue);
     display: flex;
     flex-direction: column;
+    padding-left:10px;
 }

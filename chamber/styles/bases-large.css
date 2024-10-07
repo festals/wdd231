@@ -27,6 +27,14 @@
         flex : 1 0 auto;
     }
 
+
+    /*CTA*/
+    #call{
+        width : 150%;
+    }
+
+
+    /*Directory, home page members*/
     main{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
@@ -38,24 +46,28 @@
         margin:0;
     }
 
-    .hero,h1,.members, #call{
+    .hero,h1,.members, .filter{
         grid-column: 1/4;
     }
-
-    .grid {
-        grid-template-columns : repeat(auto-fit,minmax(400px,1fr));
+    
+    .f-card{
+        float:left; 
+        width: 30.33%;
+        margin:10px;
+        flex-wrap: wrap;
     }
-
+    
     .list div {
         display : grid;
         grid-template-columns : repeat(auto-fit,minmax(200px,1fr));
     }
 
+
+    /*footer*/
     footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
         align-items: center;
-
     }
 
 }
