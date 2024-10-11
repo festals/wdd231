@@ -63,6 +63,18 @@
     }
 
 
+    /*thank you*/
+    .info h2{
+        text-align: center;
+    }
+
+    .info{
+        flex-direction: column; 
+        flex-wrap: wrap;
+        justify-items: center; 
+    }
+
+
     /*footer*/
     footer{
         display: grid;
