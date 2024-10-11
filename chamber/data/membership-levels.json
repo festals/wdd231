@@ -1,0 +1,30 @@
+{"membershipLevels": [
+    {
+        "name":"NP Membership",
+        "cost":"0",
+        "benefits":["Access to community events",
+        "Listing in business directory", "Access to resources"]
+    },        
+    {
+        "name":"Bronze Membership",
+        "cost":"175",
+        "benefits":["All NP level benefits",
+        "Discount on event tickets", "Discounts on many of your business needs",
+        "Basic training"]
+    },        
+    {
+        "name":"Silver Membership",
+        "cost":"300",
+        "benefits":["All Bronze level benefits",
+        "Randomly featured on Home Page",
+        "Discount on training and webinars", "Advertising opportunities"]
+    },        
+    {
+        "name":"Gold Membership",
+        "cost":"550",
+        "benefits":["All Silver level benefits",
+        "Invitation to VIP events", "Free event tickets",
+        "Free  training"]
+    }       
+]
+}

@@ -18,6 +18,7 @@
     <link rel="icon" href="../favicon.ico">
     <script defer src="../scripts/getdates.js"></script>
     <script defer src="../scripts/home.js"></script>
+    <script defer src="scripts/join.js"></script>
 </head>
 <body>
     <header>
@@ -54,7 +55,7 @@
 
             <fieldset>
                 <label>Organizational Title: </label>
-                <input type="text" title="Enter only letter, hyphens and space accepted with min. of seven characters " name="organizationtitle" autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$">
+                <input type="text" title="Enter only letter, hyphens and space accepted with min. of seven characters " name="organizationtitle" autocomplete="organization-title" pattern="^[A-Za-z\s\-]{8,}$">
             </fieldset>
 
             <fieldset>
@@ -64,7 +65,7 @@
 
             <fieldset>
                 <label>Phone Number: </label>
-                <input type="telephone" title="Enter your mobile phone number " name="phone" autocomplete="phone-number" required>
+                <input type="tel" title="Enter your mobile phone number " name="phone" autocomplete="tel" required>
             </fieldset>
 
             <fieldset>
@@ -75,7 +76,7 @@
             <fieldset>
                 <label>Select Membership Level</label>
                 <div class="radio">
-                    <label><input type="radio" name="memberlevel" id="Non Profit" >NP Membership</label>
+                    <label><input type="radio" name="memberlevel" value="Non Profit" >NP Membership</label>
                     <label><input type="radio" name="memberlevel" value="Bronze" >Bronze Membership</label>
                     <label><input type="radio" name="memberlevel" value="Silver" >Silver Membership</label>
                     <label><input type="radio" name="memberlevel" value="Gold" >Gold Membership</label>
