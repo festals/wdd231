@@ -277,7 +277,7 @@ button:hover {
 }
 
 
-/**/
+/*join form*/
 .form1 fieldset, div{
     margin: 1rem 0;
     border: none;
@@ -365,13 +365,12 @@ textarea{
     background-color: white;
 }
 
-#membershipLevels #levels section {
+#levels section {
     margin-top : 10px;
     padding : 1.5rem;
     border-radius : 1rem;
     border: 2px solid rgb(250, 177, 41);
-    animation : cardsAnimation 3.5s;
-
+    animation : cardsAnimation  2.5s;
 }
 
 #membershipLevels button {
@@ -391,31 +390,12 @@ textarea{
     transform : scale(1.1);
 }
 
-.NP {
-border : white solid 2px;
-animation : cardsAnimation 2s;
-}
-.B {
-background-color : #CD7F32;
-animation : cardsAnimation 2.5s;
-border : #CD7F32 solid 3px;
-}
-.S {
-background-color : silver;
-animation : cardsAnimation 3s;
-border : silver solid 3px;
-}
-.Gold {
-background-color : #d4af37;
-animation : cardsAnimation 3.5s;
-border : #d4af37 solid 3px;
-}
-
 #levelsInfo {
     text-align : start;
     margin : auto;
     padding : 1rem;
     width : 80%;
+    border-radius: 15px;
 }
 
 #levelsInfo h2 {
@@ -464,19 +444,16 @@ border : #d4af37 solid 3px;
 }
 
 
-@keyframes cardsAnimation {
-    from {
-    font-size : 1.25rem;
-    background-color : var(--light-blue);
-    transform : translate(90%);
-    }
-    50% {
-    transform : translate(-10%);
-    }
-    to {
-    font-size : 1rem;
-    transform : translate(0%);
-    }
+@keyframes cardsAnimation {   
+  75% {
+    scale: 70%;
+  }
+
+  50% {
+    scale: 100%;
+    color: orange;
+  }
+
 }
 
 
