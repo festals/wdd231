@@ -446,11 +446,11 @@ textarea{
 
 @keyframes cardsAnimation {   
   75% {
-    scale: 70%;
+    transform: scale( 0.75);
   }
 
   50% {
-    scale: 100%;
+    transform: scale( 1);
     color: orange;
   }
 
