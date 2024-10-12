@@ -52,8 +52,8 @@
     
     .f-card{
         float:left; 
-        width: 30.33%;
-        margin:10px;
+        margin:25px;
+        width : 21%;
         flex-wrap: wrap;
     }
     
