@@ -52,6 +52,17 @@ const displayLevels = (membershipLevels) => {
         card.appendChild(levelName);
         card.appendChild(levelButton);
 
+        if (level.name === "Bronze Membership"){
+            card.classList.add("bronze");
+        }
+        else if (level.name === "Silver Membership"){
+            card.classList.add("silver")
+        }
+        else if(level.name === "Gold Membership"){
+            card.classList.add("gold")}
+        
+        else {card.classList.add("normal")}
+
         const levelCard = document.getElementById("levels");
         levelCard.appendChild(card);
 

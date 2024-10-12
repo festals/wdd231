@@ -373,6 +373,22 @@ textarea{
     animation : cardsAnimation  2.5s;
 }
 
+.normal{
+    background-color: white;
+}
+
+.bronze{
+    background-color: rgb(209, 135, 44);
+}
+
+.silver{
+    background-color: silver;
+}
+
+.gold{
+    background-color: gold;
+}
+
 #membershipLevels button {
     padding : 0.6rem;
     border-radius : 1rem;
@@ -444,14 +460,14 @@ textarea{
 }
 
 
-@keyframes cardsAnimation {   
+@keyframes cardsAnimation {
+    25%,   
   75% {
     transform: scale( 0.75);
   }
 
   50% {
     transform: scale( 1);
-    color: orange;
   }
 
 }
