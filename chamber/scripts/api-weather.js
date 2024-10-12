@@ -78,10 +78,6 @@ const displayWeather = (data) => {
     currentTemp.appendChild(humidity);
     currentTemp.appendChild(sunrise);
     currentTemp.appendChild(sunset);
-
-    const today = document.createElement("p");
-    today.innerHTML = `Today <strong>${data.main.temp}&deg;C</strong>`
-    forecast.appendChild(today);
 }
 
 const displayForecast = (data) => {
