@@ -89,9 +89,9 @@ const displayForecast = (data) => {
     const afterTDate = new Date(data.list[15].dt * 1000);
     const afterThreeDate = new Date(data.list[25].dt * 1000);
 
-    tomorrow.innerHTML=`${tomorrowDate.toDateString()}:<strong>${data.list[3].main.temp}&deg;C</strong>`;
-    afterT.innerHTML=`${afterTDate.toDateString()}:<strong>${data.list[11].main.temp}&deg;C</strong>`;
-    afterThree.innerHTML=`${afterThreeDate.toDateString()}:<strong>${data.list[19].main.temp}&deg;C</strong>`;
+    tomorrow.innerHTML=`${tomorrowDate.toDateString()}: <strong>${data.list[3].main.temp}&deg;C</strong>`;
+    afterT.innerHTML=`${afterTDate.toDateString()}: <strong>${data.list[11].main.temp}&deg;C</strong>`;
+    afterThree.innerHTML=`${afterThreeDate.toDateString()}: <strong>${data.list[19].main.temp}&deg;C</strong>`;
 
     forecast.appendChild(tomorrow);
     forecast.appendChild(afterT);
