@@ -1,0 +1,59 @@
+body{
+    background-color:#f2d2a9;
+    margin: 0 0;
+    padding: 0;
+    /*#a2a8a9 silver*/
+    /*#568CA9 #2671B1 #D3DEEF #CAAD87 #DEB673*/
+
+}
+
+header{
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1, h2{
+    font-family: "Oswald";
+}
+
+h2{
+    font-weight: 400;
+    padding-top:1rem;
+    padding-left:1rem;
+    text-decoration: underline solid #2671B1;
+
+}
+
+main p{
+    text-align: justify;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: "lato";
+}
+
+img{
+    padding: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+figcaption {
+    font-style: italic;
+    text-align : center;
+}
+
+header, footer{
+    background-color: #568CA9;
+    color:#CAAD87;
+
+}
+
+footer{
+    font-family: "lato";
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+}
