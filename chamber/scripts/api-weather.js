@@ -85,7 +85,7 @@ const displayForecast = (data) => {
     const afterT = document.createElement("p");
     const afterThree = document.createElement("p");
 
-    const tomorrowDate = new Date(data.list[5].dt * 1000);
+    const tomorrowDate = new Date(data.list[4].dt * 1000);
     const afterTDate = new Date(data.list[15].dt * 1000);
     const afterThreeDate = new Date(data.list[25].dt * 1000);
 
