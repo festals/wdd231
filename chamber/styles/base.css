@@ -54,6 +54,8 @@ header .head{
     display : flex;
     flex-direction : column;
     list-style : none;
+    align-items: end;
+    padding: 0.2rem;
 }
 
 nav{

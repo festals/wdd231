@@ -46,7 +46,7 @@
         margin:0;
     }
 
-    .hero,h1,.members, .filter{
+    .hero,h1,.members, .filter,.messages{
         grid-column: 1/4;
     }
     
