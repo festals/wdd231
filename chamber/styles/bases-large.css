@@ -83,6 +83,41 @@
 
     
 
+    /*discover*/
+    .pictures{
+        display: grid;
+        place-items: center;
+        grid-column: 2/4;
+    }
+
+    .pictures img{
+        transform : scale(0.96);
+        border-radius : 0;
+        box-shadow : 5px 5px 5px var(--light-blue);
+        transition : transform 0.2s ease-in-out, border-radius 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .pictures figcaption{
+        font-style: italic; 
+        padding-left: 1rem;
+    }
+
+    .pictures img:hover{
+        transform : scale(1);
+        box-shadow : none;
+    }
+
+    .about p{
+        padding:1rem;
+    }
+
+    .about div{
+        background-color: white;
+        border: solid var(--light-blue) 2px;
+    }
+
+
+
 
     /*thank you*/
     .info h2{
