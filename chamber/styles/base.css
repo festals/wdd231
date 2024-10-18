@@ -247,7 +247,6 @@ button:hover {
 
 
 .grid img, .filtered-members img{
-    width: 100%;
     border: 2px solid #1c1919;
     box-shadow : 0 0 10px #333;
     margin:10px;
