@@ -86,7 +86,6 @@
     /*discover*/
     .pictures{
         display: grid;
-        place-items: center;
         grid-column: 2/4;
     }
 
@@ -97,10 +96,6 @@
         transition : transform 0.2s ease-in-out, border-radius 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     }
 
-    .pictures figcaption{
-        font-style: italic; 
-        padding-left: 1rem;
-    }
 
     .pictures img:hover{
         transform : scale(1);
