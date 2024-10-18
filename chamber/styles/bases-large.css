@@ -84,9 +84,16 @@
     
 
     /*discover*/
+    #discover{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        gap:10px;
+    }
+
     .pictures{
         display: grid;
-        grid-column: 2/4;
+        grid-column: 2/3;
     }
 
     .pictures img{
@@ -100,6 +107,12 @@
     .pictures img:hover{
         transform : scale(1);
         box-shadow : none;
+    }
+
+    .about div{
+        display: grid;
+        margin: 1rem;
+        align-items: center;
     }
 
     .about p{
