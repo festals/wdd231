@@ -1,6 +1,7 @@
 const currentTemp = document.getElementById("current-temp");
 const weatherIcon = document.getElementById("weather-icon");
 const wind = document.getElementById("wind");
+const weatherIcon2 = document.getElementById("weather-icon2");
 const url = "https://horaire-maree.fr/maree/Quend-Plage-Les-Pins/"
 
 const urlWeather = "https://api.openweathermap.org/data/2.5/weather?lat=50.32&lon=1.54&units=metric&appid=37c35753f34f3a37825f8d6a42ba3c16";
@@ -69,6 +70,10 @@ function calculateWindChild(temperature, windSpeed) {
 
 
 const displayWind = (data) => {
+    weatherIcon2.innerHTML ="";
+    wind.innerHTML = ""; 
+
+
     const windchill = document.createElement("p");
     const windSpeed = document.createElement("p");
     const windDeg = document.createElement("p");
@@ -114,7 +119,7 @@ const displayWind = (data) => {
     tide.innerHTML= `Click here to find the time of tide`;
     tide.setAttribute("href", url)
 
-    wind.appendChild(icon);
+    weatherIcon2.appendChild(icon);
     wind.appendChild(windchill);
     wind.appendChild(windSpeed);
     wind.appendChild(windDeg);
