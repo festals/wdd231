@@ -23,13 +23,11 @@ const displayMembers = (members) => {
         fCard.classList.add("f-card");
         const level = document.createElement("p");
 
-        level.innerHTML =`Membership level: ${member.membershipLevel}`;
-
         if (member.membershipLevel == 1){
                 level.innerHTML = `Membership level: Gold`
-            } else if (member.membershipLevel == 2) {
-                level.innerHTML = `Membership level: Silver`
-            }
+        } else if (member.membershipLevel == 2) {
+            level.innerHTML = `Membership level: Silver`
+        }
 
         fCard.innerHTML=`
                     <img src ="images/${member.image}" alt="${member.name}">

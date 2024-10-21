@@ -66,9 +66,9 @@ const displayWeather = (data) => {
     weather.innerHTML= `${data.weather[0].description}`;
     high.innerHTML = `High: ${data.main.temp_max}&deg;C`;
     low.innerHTML = `Low: ${data.main.temp_min}&deg;C`;
-    humidity.innerHTML = `Low: ${data.main.humidity}%`;
+    humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
     sunrise.innerHTML = `Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}`;
-    sunset.innerHTML = `Sunrise: ${new Date(data.sys.sunset * 1000).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}`;
+    sunset.innerHTML = `Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}`;
 
     weatherIcon.appendChild(icon);
     currentTemp.appendChild(temp);
