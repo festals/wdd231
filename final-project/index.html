@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quend Plage Family House | Home Page</title>
+    <meta name="description" content="Home page for Quend Plage Family House final project WDD231">
+    <meta name="author" content="Sophie Festal">
+    <meta property="og:title" content="Home page for Quend Plage Family House">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/quend.jpg">
+    <meta property="og:url" content="https://festals.github.io/wdd231/final-project">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/bases-large.css">
+    <link rel="icon" href="favicon.ico">
+    <script defer src="../scripts/getdates.js"></script>
+    <script defer src="../scripts/home.js"></script>
+    <script defer src="scripts/api-weather.js"></script>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <img src="images/paris_logo.jpg" alt="paris business center" loading="lazy">
+            <div>
+                <h1>PARIS</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <a id="menu"></a> 
+        <nav id="animateme">
+            <ul class="navigation">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>     
+    </header>
+
+    <main>
+        <section class="hero">
+            <!-- <picture>
+                <img src="images/hero.jpg" alt="Paris, France" loading="lazy" >
+            </picture> -->
+            <div id="call">
+                <nav class ="CTA">
+                    <a href="join.html">Join Us Now</a>
+                </nav>
+            </div>
+        </section> 
+        <h1>Home</h1>
+
+        <section class="event">
+            <h2>Events</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dicta explicabo fugit vero dolores! In.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, ratione.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos reprehenderit quo magnam repellendus at beatae recusandae eum voluptatum odit?</p>
+        </section>
+
+        <section class="tempToday">
+            <h2>Current Weather</h2>
+            <div class="icon">
+                <div id="weather-icon"></div>
+                <div id="current-temp"></div>
+            </div>
+        </section>
+
+        <section class="temp">
+            <h2>Weather Forecast</h2>
+            <div id="forecast">
+            </div>
+        </section>
+
+        <section class="filter">
+            <div class="filtered-members">
+                <article id="filtered-cards">
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><b>Paris Chamber of Commerce</b>
+        <br>6 Bld De La Liberté 
+        <br>Paris, France 75013
+        <br>info@pariscc.fr 
+        <br>(36)1-64-62-02-19</p> 
+
+        <div class="media">
+            <a href="https://youtube.com">
+                <img src="images/youtube.png" alt="Youtube logo">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter_logo.webp" alt="Twitter logo">
+            </a>
+            <a href="https://LinkedIn.com">
+                <img src="images/linkedin.png" alt="Linkedin logo">
+            </a>
+        </div>
+
+        <p>WDD231 Class Project
+        <br>Sophie Festal
+        <br>©️<span id="currentyear"></span> Paris Chamber of Commerce
+        <br>Last modification: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>
