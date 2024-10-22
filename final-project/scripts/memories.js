@@ -22,16 +22,20 @@ const displayMemory = (memories) => {
         const memoryName = document.createElement("h3")
         const memoryButton = document.createElement("button")
 
-        memoryImg.setAttribute ("href", memory.image);
+        memoryImg.setAttribute("src", memory.image);
+        memoryImg.setAttribute("alt", "icon of sand yachting");
+        memoryImg.setAttribute("loading", "lazy");
+        // memoryImg.setAttribute("width", "550");
+    
         memoryName.innerHTML = memory.name;
-        memoryButton.innerHTML = "SEE";
+        memoryButton.innerHTML = "See Details";
 
         card.classList.add(memory.memoryName);
         card.appendChild(memoryName);
         card.appendChild(memoryButton);
         card.appendChild(memoryImg);
 
-        const memoryCard = document.getElementById("memories");
+        const memoryCard = document.getElementById("memory");
         memoryCard.appendChild(card);
 
         memoryButton.addEventListener("click", () => {
@@ -41,34 +45,39 @@ const displayMemory = (memories) => {
     });
 }
 
-getLevelsInfo()
+getMemoryInfo()
 
 
 //Modal cards
 const displayMemoryInfo = (memory) => {
     const memoriesModal = document.getElementById("memories-info");
 
-    const benefitsList = document.createElement("ul");
 
-    level.benefits.forEach(benefit => {
-        const list = document.createElement("li");
-        list.innerHTML = benefit;
-        benefitsList.appendChild(list);
-    });
-
-    membershipModal.innerHTML = `
+    memoriesModal.innerHTML = `
     <button id="closeModal">X</button>
-    <h2>${level.name} Level</h2>
-    <h4>Cost: ${level.cost} Dollars Per Year</h4>
-    <h3>Benefits:</h3>
+    <h2>${memory.name}</h2>
+    <img src="${memory.image}" width="400">
+    <p>Photographed by: ${memory.photograph}</p>
+    <p>Date: ${memory.date}</p>
+    <p>Description: ${memory.description}</p>
     `;
 
-    membershipModal.appendChild(benefitsList);
-
-    membershipModal.showModal();
+    memoriesModal.showModal();
 
     const closeModal = document.getElementById("closeModal");
     closeModal.addEventListener("click", () => {
-        membershipModal.close();
+        memoriesModal.close();
     });
 }
+
+const memo = document.getElementById("memory-button");
+const eventB = document.getElementById("event-button");
+
+
+memo.addEventListener("click", () => {
+    displayMemory(data.memories.filter(memory => memory.type = "memory"));
+});
+
+eventB.addEventListener("click", () => {
+    displayMemory(memories.filter(memory => memory.type == "event"));
+});
