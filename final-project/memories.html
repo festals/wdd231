@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quend Plage Family House | Home Page</title>
-    <meta name="description" content="Home page for Quend Plage Family House final project WDD231">
+    <title>Quend Plage Family House | Memories Page</title>
+    <meta name="description" content="Memories page for Quend Plage Family House final project WDD231">
     <meta name="author" content="Sophie Festal">
-    <meta property="og:title" content="Home page for Quend Plage Family House">
+    <meta property="og:title" content="Memories page for Quend Plage Family House">
     <meta property="og:type" content="website">
     <meta property="og:image" content="C:\Users\festa\OneDrive\wdd231\final-project\images\quend.jpg">
     <meta property="og:url" content="https://festals.github.io/wdd231/final-project">
@@ -18,7 +18,7 @@
     <link rel="icon" href="favicon.ico">
     <script defer src="../scripts/getdates.js"></script>
     <script defer src="../scripts/home.js"></script>
-    <script defer src="scripts/api-weather.js"></script>
+    <script defer src="scripts/memories.js"></script>
 </head>
 <body>
     <header>
@@ -32,8 +32,8 @@
         <a id="menu"></a> 
         <nav id="animateme">
             <ul class="navigation">
-              <li><a href="#" class="active">Home</a></li>
-              <li><a href="memories.html">Memories</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#" class="active">Memories</a></li>
               <li><a href="share.html">Share</a></li>
               <li><a href="activities.html">Activities</a></li>
             </ul>
@@ -41,38 +41,13 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div id="call">
-                <nav class ="CTA">
-                    <a href="share.html">Share a picture!</a>
-                </nav>
-            </div>
-        </section> 
-            <h1>Home</h1>
+        
+        <div id="memories">
+            <h1>Memories</h1>
+            <section id="memory"></section>
+            <dialog id="memories-info"></dialog>
+        </div>
 
-        <section class="event">
-            <h2>Information</h2>
-            <a href="https://fortmahon.webcam/live.php"><p>CLICK HERE (Webcam live from Fort-Mahon plage)</p></a>
-            <p>Gas cylinder opened on 28 September 2024</p>
-            <p>🎃31 October: Halloween Parades and Fireworks on the beach🎃</p>
-        </section>
-
-        <section class="tempToday">
-            <h2>Current Weather</h2>
-            <div class="icon">
-                <div id="weather-icon"></div>
-                <div id="current-temp"></div>
-            </div>
-        </section>
-
-        <section class="temp">
-            <h2>Wind</h2>
-            <div class="icon2">
-                <div id="weather-icon2"></div>
-                <div id="wind">
-                </div>
-            </div>
-        </section>
 
     </main>
 

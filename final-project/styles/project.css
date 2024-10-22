@@ -8,6 +8,14 @@
     --paragraph-font: 'Lato';
 }
 
+p, li, a{
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4{
+    font-family: var(--heading-font);
+}
+
 header{
     background-color: var(--brown);
     display:flex;
@@ -16,13 +24,13 @@ header{
     padding:10px;  
 }
 
-h1{
+h1, p{
     padding-left:5px;
 }
 
 header img{
-    width: 80px;
-    height: 100px;
+    width: 100px;
+    height: 75px;
     margin:10px;
     border-radius: 15%;
 }
@@ -40,6 +48,7 @@ header .head{
 /*main*/
 main{
     display: block;
+    background-color: var(--brown);
 }
 
 section{
@@ -54,6 +63,10 @@ section h2{
     background-color: var(--light-blue);
     display: flex;
     justify-content: center;    
+}
+
+main h1{
+    margin:1.5rem;
 }
 
 
@@ -137,7 +150,7 @@ nav.open{
 
 .hero{
     height : 50rem;
-    background-image : url(../images/hero.jpg);
+    background-image : url(../images/quend.jpg);
     background-repeat : no-repeat;
     background-size : cover;
     background-position : center;
@@ -154,7 +167,7 @@ nav.open{
     flex-direction : column;
     justify-content:center;
     align-items : center;
-    padding : 2rem;
+    padding : 1rem;
     text-align : center;
     gap : 3rem;
 }
@@ -185,6 +198,27 @@ nav.open{
 }
 
 
+/*Events*/
+.event p {
+    margin-left:1rem;
+}
+
+.event a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    transition : color 0.5s, font-size 0.5s, transform 0.3s;
+}
+
+.event a:hover{
+    font-weight: 700;
+    color: var(--blue);
+    transform : scale(1.05);
+}
+
+
+
+
 
 /*icon weather*/
 .icon, .icon2{
@@ -207,7 +241,7 @@ nav.open{
 
 .icon2 a:hover{
     font-weight: 700;
-    color: blueviolet;
+    color: var(--blue);
     transform : scale(1.05);
 }
 

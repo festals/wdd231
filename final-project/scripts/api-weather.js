@@ -44,10 +44,10 @@ const displayWeather = (data) => {
     icon.setAttribute("loading", "lazy");
     icon.setAttribute("width", "100");
 
-    temp.innerHTML=`<strong>${data.main.temp}&deg;C</strong>`;
+    temp.innerHTML=`<strong>${Math.round (data.main.temp)}&deg;C</strong>`;
     weather.innerHTML= `${data.weather[0].description}`;
-    high.innerHTML = `High: ${data.main.temp_max}&deg;C`;
-    low.innerHTML = `Low: ${data.main.temp_min}&deg;C`;
+    high.innerHTML = `High: ${Math.round (data.main.temp_max)}&deg;C`;
+    low.innerHTML = `Low: ${Math.round (data.main.temp_min)}&deg;C`;
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
     sunrise.innerHTML = `Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}`;
     sunset.innerHTML = `Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}`;
@@ -89,34 +89,34 @@ const displayWind = (data) => {
 
 
     if (data.main.temp <= 10 && data.wind.speed > 4.8) {
-        windchill.innerHTML = `${calculateWindChild(data.main.temp, data.wind.speed)} km/h`;
+        windchill.innerHTML = `Windchill: ${calculateWindChild(data.main.temp, data.wind.speed)} km/h`;
     }
     else {
         windchill.innerHTML = "Windchill: N/A";
     }
 
 
-    windSpeed.innerHTML=`Wind Speed: ${data.wind.speed * 3.6} km/h`;
+    windSpeed.innerHTML=`Wind Speed: ${(data.wind.speed * 3.6).toFixed(1)} km/h`;
 
     if (data.wind.deg >165 && data.wind.deg <195 || data.wind.deg >345 && data.wind.deg <15 ){
-        windDeg.innerHTML="The degrees of the wind is not favorable to sand yacht";
+        windDeg.innerHTML="The degrees of the wind is <b>not favorable</b> to sand yacht";
     }
     else{
-        windDeg.innerHTML="The degrees of the wind is favorable to sand yacht";
+        windDeg.innerHTML="The degrees of the wind is <b>favorable</b> to sand yacht";
     }
 
     if (data.wind.speed < 3.06){
-        windSandYacht.innerHTML="The speed of the wind is too weak to sand yacht";
+        windSandYacht.innerHTML="The speed of the wind is <b>too weak</b> to sand yacht";
     }
     else if (data.wind.speed >15){
-        windSandYacht.innerHTML="The speed of the wind is too strong to sand yacht";
+        windSandYacht.innerHTML="The speed of the wind is <b>too strong</b> to sand yacht";
     }
     else{
-        windSandYacht.innerHTML="The speed of the wind is good to sand yacht";
+        windSandYacht.innerHTML="The speed of the wind is <b>good</b> to sand yacht";
     }
 
     sandYachting.innerHTML=`You need to stop sand yachting 1h30 before high tide`;
-    tide.innerHTML= `Click here to find the time of tide`;
+    tide.innerHTML= "CLICK HERE to find the time of tide";
     tide.setAttribute("href", url)
 
     weatherIcon2.appendChild(icon);
