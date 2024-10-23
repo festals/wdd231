@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quend Plage Family House | share Page</title>
+    <meta name="description" content="Form for sharing page for Quend Plage Family House final project WDD231">
+    <meta name="author" content="Sophie Festal">
+    <meta property="og:title" content="share page for Quend Plage Family House">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="C:\Users\festa\OneDrive\wdd231\final-project\images\quend.jpg">
+    <meta property="og:url" content="https://festals.github.io/wdd231/final-project">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="icon" href="favicon.ico">
+    <script defer src="../scripts/getdates.js"></script>
+    <script defer src="../scripts/home.js"></script>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <img src="images/quend.jpg" alt="Quend plage">
+            <div>
+                <h1>Quend Plage</h1>
+                <p>Family House</p>
+            </div>
+        </div>
+        <a id="menu"></a> 
+        <nav id="animateme">
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="memories.html" >Memories</a></li>
+              <li><a href="#" class="active">Share</a></li>
+              <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>     
+    </header>
+
+    <main>
+        <h1>Share your Picture</h1>
+
+        <form method="get" action="thank-you.html" class="form1">
+            <fieldset>
+                <label>Photograph's name: </label>
+                <input type="text" title="Enter the name you want to be named" autocomplete="name" name="phname" required>
+            </fieldset>
+
+            <fieldset>
+                <label>Title: </label>
+                <input type="text" title="Enter the title of the picture" name="title" required>
+            </fieldset>
+
+            <fieldset>
+                <label>Date of the picture: </label>
+                <input type="date" title="Enter the date of the picture" name="date" required>
+            </fieldset>
+
+            <fieldset>
+                <label>Email: </label>
+                <input type="email" title="Enter your email address " name="email" autocomplete="email" placeholder="someone@gmail.com" required>
+            </fieldset>
+
+            <fieldset>
+                <label>Picture: </label>
+                <input type="file" title="Select a file to share, only accept .jpg, .webp and .png" name="file" accept="image/png, image/webp, image/jpg">
+            </fieldset>
+
+
+            
+            <fieldset>
+                <label>Select tour type of picture:</label>
+                <div class="radio">
+                    <label><input type="radio" name="memoryrepair" value="Memories" required>Memories</label>
+                    <label><input type="radio" name="memoryrepair" value="Repairs" >Repairs</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label>Picture's description: </label>
+                <textarea title="enter the description of your picture" name="description" rows="10" cols="50" required></textarea>
+            </fieldset>
+
+
+            <input type="submit" value="Submit your Picture">
+        </form>
+
+    </main>
+
+    <footer>
+        <p>WDD231 Class Project
+        <br>Sophie Festal
+        <br>©️<span id="currentyear"></span> Quend Plage Family House
+        <br>Last modification: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>

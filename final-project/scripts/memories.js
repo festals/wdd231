@@ -41,7 +41,6 @@ const displayMemory = (memories) => {
         memoryButton.addEventListener("click", () => {
             displayMemoryInfo(memory);
         })
-
     });
 }
 
@@ -68,16 +67,17 @@ const displayMemoryInfo = (memory) => {
     closeModal.addEventListener("click", () => {
         memoriesModal.close();
     });
+    
 }
 
-const memo = document.getElementById("memory-button");
-const eventB = document.getElementById("event-button");
+// const memo = document.getElementById("memory-button");
+// const eventB = document.getElementById("event-button");
 
 
-memo.addEventListener("click", () => {
-    displayMemory(data.memories.filter(memory => memory.type = "memory"));
-});
+// memo.addEventListener("click", () => {
+//     displayMemory(data.memories.filter(memory => memory.type != "memory"));
+// });
 
-eventB.addEventListener("click", () => {
-    displayMemory(memories.filter(memory => memory.type == "event"));
-});
+// eventB.addEventListener("click", () => {
+//     displayMemory(memories.filter(memory => memory.type == "event"));
+// });

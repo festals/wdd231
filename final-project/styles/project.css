@@ -8,7 +8,8 @@
     --paragraph-font: 'Lato';
 }
 
-p, li, a{
+
+p, li, a, button{
     font-family: var(--paragraph-font);
 }
 
@@ -149,27 +150,22 @@ nav.open{
 /*call to action on banner */
 
 .hero{
-    height : 50rem;
     background-image : url(../images/quend.jpg);
     background-repeat : no-repeat;
     background-size : cover;
     background-position : center;
     margin-bottom : 2rem;
     position : relative;
-    height: 400px;
+    height:400px;
 }
 
 #call{
     position : absolute;
-    width : 120%;
-    height : 120%;
-    display : flex;
-    flex-direction : column;
+    display : flex;  
+    top: 70%;
+    left: 70%;
     justify-content:center;
     align-items : center;
-    padding : 1rem;
-    text-align : center;
-    gap : 3rem;
 }
 /* .CTA{
     display: block; 
@@ -206,13 +202,14 @@ nav.open{
 .event a{
     text-decoration: none;
     color: black;
+    font-family: var(--heading-font);
     font-weight: 400;
     transition : color 0.5s, font-size 0.5s, transform 0.3s;
 }
 
 .event a:hover{
     font-weight: 700;
-    color: var(--blue);
+    color: rgb(4, 4, 113);
     transform : scale(1.05);
 }
 
@@ -241,7 +238,7 @@ nav.open{
 
 .icon2 a:hover{
     font-weight: 700;
-    color: var(--blue);
+    color: rgb(4, 4, 113);
     transform : scale(1.05);
 }
 
@@ -250,8 +247,124 @@ nav.open{
     border-radius: 100px;
 }
 
+.birthday{
+    text-align: center;
+}
 
-/* directory toggle grid list*/
+.first{
+    animation : cardsAnimation  2s;
+}
+.sec{
+    animation : cardsAnimation  2.5s;
+}
+.third{
+    animation : cardsAnimation  3s;
+}
+
+@keyframes cardsAnimation {
+  75% {
+    transform: scale( 0.75);
+  }
+
+  50% {
+    transform: scale( 1);
+  }
+
+}
+
+
+/* memories, toggle grid list*/
+.toggleView{
+	padding: 0.5rem;
+	text-align: center;
+}
+
+#memory section{
+    position: relative;
+    padding: 1rem;
+}
+
+#memory button {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 100px;
+    padding : 0.6rem;
+    border-radius : 1rem;
+    font-weight : 700;
+    background-color : var(--brown);
+    color : black;
+    transition : background-color 0.3s, color 0.3s, font-size 0.3s, transform 0.3s;
+}
+
+#memory button:hover {
+    font-weight : 900;
+    background-color : var(--blue);
+    border : white solid 2px;
+    color : white;
+    transform : scale(1.1);
+}
+
+#memory img{
+    box-shadow : 0 0 20px  black;
+}
+
+#memory-button, #event-button{
+    border-radius: 15px;
+    padding: 1rem;
+    margin:5px;
+    font-weight: 700;
+    border: 2px solid var(--blue);
+    cursor : pointer;
+    background-color: var(--light-brown);
+}
+
+#memory-button:hover, #event-button:hover{
+    background-color : white;
+    transition : background-color 0.3s;
+}
+
+#memories-info {
+    width : 80%;
+    border-radius: 15px;
+}
+
+#memories-info h2 {
+    margin-top : 50px;
+    margin-left:10px;
+}
+
+#memories-info img {
+    margin-left : 50px;
+    border-radius : 1rem;
+}
+
+#memories-info p {
+    text-align : center;
+}
+
+
+#closeModal {
+    position : absolute;
+    top : 23px;
+    right : 23px;
+    padding : 0.5rem 1rem;
+    justify-content : center;
+    align-items : center;
+    cursor : pointer;
+    border-radius: 9px;
+}
+
+#closeModal:hover {
+    color : var(--brown);
+    background-color: var(--blue);
+}
+
+::backdrop {
+    background-color : rgba(73, 119, 245, 0.297);
+}
+
+
 
 /*thank you page*/
 
