@@ -7,7 +7,7 @@ if (numShare == 0) {
 	numbersDisplay.textContent = `This is the first time you share a picture with us. 🥳 Welcome!`;
     numShare = 1;
 } else {
-    numbersDisplay.innerHTML = `This is the ${numShare} picture you shared with us. Thank you!`;
+    numbersDisplay.innerHTML = `⛱️This is the ${numShare} picture you shared with us. Thank you!`;
 }
 
 numShare++;

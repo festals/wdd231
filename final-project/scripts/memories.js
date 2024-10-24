@@ -1,12 +1,23 @@
 const memoriesJSON = "data/memories.json";
 
+const memo = document.getElementById("memory-button");
+const eventB = document.getElementById("event-button");
+
+// memo.addEventListener("click", () => {
+//     displayMemory(data.memories.filter(memory => memory.type === "memory"));
+// });
+
+// eventB.addEventListener("click", () => {
+//     displayMemory(data.memories.filter(memory => memory.type === "event"));
+// });
+
 
 async function getMemoryInfo() {
     try {
         const response = await fetch(memoriesJSON);
         if (response.ok) {
             const data = await response.json();
-            displayMemory(data.memories);
+            displayMemory(data.memories);    
         } else {
             throw Error(await response.text())
         }
@@ -21,17 +32,20 @@ const displayMemory = (memories) => {
         const memoryImg = document.createElement("img")
         const memoryName = document.createElement("h3")
         const memoryButton = document.createElement("button")
+        const memoryType = document.createElement("p")
 
         memoryImg.setAttribute("src", memory.image);
         memoryImg.setAttribute("alt", "icon of sand yachting");
         memoryImg.setAttribute("loading", "lazy");
         // memoryImg.setAttribute("width", "550");
     
+        memoryType.innerHTML = memory.type;
         memoryName.innerHTML = memory.name;
         memoryButton.innerHTML = "See Details";
 
         card.classList.add(memory.memoryName);
         card.appendChild(memoryName);
+        card.appendChild(memoryType);
         card.appendChild(memoryButton);
         card.appendChild(memoryImg);
 
@@ -44,7 +58,7 @@ const displayMemory = (memories) => {
     });
 }
 
-getMemoryInfo()
+getMemoryInfo();
 
 
 //Modal cards
@@ -56,9 +70,9 @@ const displayMemoryInfo = (memory) => {
     <button id="closeModal">X</button>
     <h2>${memory.name}</h2>
     <img src="${memory.image}" width="400">
-    <p>Photographed by: ${memory.photograph}</p>
-    <p>Date: ${memory.date}</p>
-    <p>Description: ${memory.description}</p>
+    <p>Photographed by: ${memory.photograph}<br>
+    Date: ${memory.date}<br>
+    Description: ${memory.description}</p>
     `;
 
     memoriesModal.showModal();
@@ -70,14 +84,11 @@ const displayMemoryInfo = (memory) => {
     
 }
 
-// const memo = document.getElementById("memory-button");
-// const eventB = document.getElementById("event-button");
+memo.addEventListener("click", () => {
+    displayMemory(data.memories.filter(memory => memory.type === "memory"));
+});
 
+eventB.addEventListener("click", () => {
+    displayMemory(data.memories.filter(memory => memory.type === "event"));
+});
 
-// memo.addEventListener("click", () => {
-//     displayMemory(data.memories.filter(memory => memory.type != "memory"));
-// });
-
-// eventB.addEventListener("click", () => {
-//     displayMemory(memories.filter(memory => memory.type == "event"));
-// });

@@ -1,0 +1,168 @@
+@media (min-width: 640px) {
+
+
+    #menu {
+        display : none;
+    }
+
+    header{
+        display: block;
+    }
+
+    header nav {
+        background-color: var(--light-brown); 
+    }
+
+    nav{
+        grid-template-rows: 1fr;
+    }
+
+    .navigation {
+        display : flex;
+        flex-direction : row;
+        padding-right : 2rem;
+    }
+
+    .navigation li {
+        display : flex;
+        flex : 1 0 auto;
+    }
+
+
+    /*CTA*/
+
+
+    /* home page members*/
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap:10px;
+    }
+
+    section{
+        margin:0;
+    }
+
+    .hero,h1,.event,#memories{
+        grid-column: 1/4;
+    }
+
+    .birthday{
+        margin:2rem;
+    }
+
+    .event{
+        place-items: center;
+    }
+
+    .event h2{
+        width:100%;
+    }
+
+    #memories-info{
+        width:600px;
+    }
+
+    #memories-info img{
+        display:none;
+    }
+
+    #memories-info p{
+        text-align: center;
+        padding: 1rem;
+    }
+
+
+
+    /*share*/
+    .form{
+        margin: 0;
+        padding: 0;
+    }
+
+    .form1{
+        width: 400px;
+        margin: 0 auto;
+        grid-column: 2/4;
+        border-radius: 15px;
+        padding: 0.5rem;
+        margin:0;
+        margin-left:5%;
+    } 
+
+    .form1 input[type="submit"]{
+        margin: 10%;
+    }
+
+
+
+
+    /*discover*/
+    #discover{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        gap:10px;
+    }
+
+    .pictures{
+        display: grid;
+        grid-column: 2/3;
+    }
+
+    .pictures img{
+        transform : scale(0.96);
+        border-radius : 0;
+        box-shadow : 5px 5px 5px var(--light-blue);
+        transition : transform 0.2s ease-in-out, border-radius 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+
+    .pictures img:hover{
+        transform : scale(1);
+        box-shadow : none;
+    }
+
+    .about div{
+        display: grid;
+        margin: 1rem;
+        align-items: center;
+    }
+
+    .about p{
+        padding:1rem;
+    }
+
+    .about div{
+        background-color: white;
+        border: solid var(--light-blue) 2px;
+    }
+
+
+
+
+    /*thank you*/
+    .thanks h2{
+        text-align: center;
+    }
+
+    .thanks {
+        grid-column: 1/4;
+        width: 90%;
+        margin-left:5%;
+        padding: 0.3rem;
+    }
+
+    .num, .email{
+        text-align: center;
+    }
+
+
+    /*footer*/
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        align-items: center;
+    }
+}
