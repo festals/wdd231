@@ -308,6 +308,8 @@ nav.open{
 
 #memory img{
     box-shadow : 0 0 20px  black;
+    width:80%;
+    height: 80%;
 }
 
 #memory-button, #event-button{

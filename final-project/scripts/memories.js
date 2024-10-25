@@ -12,6 +12,8 @@ const eventB = document.getElementById("event-button");
 // });
 
 
+
+
 async function getMemoryInfo() {
     try {
         const response = await fetch(memoriesJSON);
@@ -25,6 +27,7 @@ async function getMemoryInfo() {
         console.log(error);
     };
 };
+
 
 const displayMemory = (memories) => {
     memories.forEach(memory => {
@@ -62,7 +65,6 @@ const displayMemory = (memories) => {
 
 getMemoryInfo();
 
-
 //Modal cards
 const displayMemoryInfo = (memory) => {
     const memoriesModal = document.getElementById("memories-info");
@@ -86,11 +88,4 @@ const displayMemoryInfo = (memory) => {
     
 }
 
-memo.addEventListener("click", () => {
-    displayMemory(data.memories.filter(memory => memory.type === "memory"));
-});
-
-eventB.addEventListener("click", () => {
-    displayMemory(data.memories.filter(memory => memory.type === "event"));
-});
 
