@@ -31,7 +31,7 @@ h1, p{
 
 header img{
     width: 100px;
-    height: 75px;
+    height: 100px;
     margin:10px;
     border-radius: 15%;
 }
@@ -150,7 +150,7 @@ nav.open{
 /*call to action on banner */
 
 .hero{
-    background-image : url(../images/quend.jpg);
+    background-image : url(../images/sunset\ \(1\).jpg);
     background-repeat : no-repeat;
     background-size : cover;
     background-position : center;
@@ -274,7 +274,7 @@ nav.open{
 
 
 
-/* memories, toggle grid list*/
+/* memories, toggle*/
 .toggleView{
 	padding: 0.5rem;
 	text-align: center;

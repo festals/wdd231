@@ -1,123 +1,123 @@
 {"memories": [
     {
         "name":"The beach",
-        "image":"images/quend.jpg",
+        "image":"images/villedeleau.jpg",
         "type": "memory",
         "photograph":"Myriam K",
-        "date":"25/04/1997",
-        "description":"gugugugu"
+        "date":"05/05/04",
+        "description":"Taken at low tide, when the light are on in the city."
     },        
     {
-        "name":"RollMops",
-        "image":"images/quend.jpg",
-        "type": "event",
-        "photograph":"Flore W",
-        "date":"25/04/1997",
-        "description":"hahaha"
-    },        
-    {
-        "name":"La Cucaracha",
-        "image":"images/quend.jpg",
+        "name":"Windy",
+        "image":"images/vent.jpg",
         "type": "memory",
-        "photograph":"Sandy G",
-        "date":"25/04/1997",
-        "description":"hehehe"
+        "photograph":"Sophie F",
+        "date":"20/11/2020",
+        "description":"The strong wind makes waves the dry sand on the wet sand"
     },        
     {
-        "name":"Chic Chic",
-        "image":"images/quend.jpg",
+        "name":"New TV Stand",
+        "image":"images/newmeuble.jpg",
         "type": "event",
         "photograph":"Camille F",
-        "date":"25/04/1997",
-        "description":"hihihi"
+        "date":"25/04/2017",
+        "description":"Installation of a new TV stand with a lot of storage "
     },        
     {
-        "name":"Et Boom",
-        "image":"images/quend.jpg",
+        "name":"Snowy Beach",
+        "image":"images/neigeplage.jpg",
+        "type": "memory",
+        "photograph":"Myriam K",
+        "date":"04/01/2021",
+        "description":"The snow on the beach on a beautiful cold evening"
+    },        
+    {
+        "name":"Creating New with Old",
+        "image":"images/arrangemntmeuble.jpg",
         "type": "event",
         "photograph":"Clem F",
-        "date":"25/04/1997",
-        "description":"bebebebe"
+        "date":"25/07/2015",
+        "description":"Cutting old furniture and separating them in two piece to create a new entrance furniture"
     },        
     {
-        "name":"Le Roi de la Rumba",
-        "image":"images/quend.jpg",
+        "name":"The King of the Sand",
+        "image":"images/chateaudesable.jpg",
         "type": "memory",
-        "photograph":"J F",
-        "date":"25/04/1997",
-        "description":"babababa"
+        "photograph":"Magali B",
+        "date":"14/08/2024",
+        "description":"Flo creating a terrible sand crocodile with his bare hand and shovel with a bit of help from the kid of course"
     },        
     {
-        "name":"Caramba",
-        "image":"images/quend.jpg",
+        "name":"It Rise",
+        "image":"images/beach-cable.jpg",
         "type": "event",
-        "photograph":"Cora D",
-        "date":"25/04/1997",
-        "description":"huhuhu"
+        "photograph":"Florent F",
+        "date":"25/03/2023",
+        "description":"Every year the pipe to discharge the water into the sea is dug up and floats closer and closer to the sea wall "
     },        
     {
-        "name":"Kitty Kitty",
-        "image":"images/quend.jpg",
-        "type": "event",
+        "name":"14 of July",
+        "image":"images/fireworks.jpg",
+        "type": "memory",
         "photograph":"Natalya B",
-        "date":"25/04/1997",
-        "description":"bibibibi"
+        "date":"14/07/2016",
+        "description":"The fireworks on the beach in front of the house to celebrates the 14th of July with the whole family 🎆"
     },        
     {
-        "name":"Crumble",
-        "image":"images/quend.jpg",
+        "name":"Birthday Cake",
+        "image":"images/gateau.jpg",
         "type": "memory",
         "photograph":"Alex B",
-        "date":"25/04/1997",
-        "description":"bububu"
+        "date":"16/08/2023",
+        "description":"Fondant au Chocolat with homemade Raspberry sorbet and homemade salted butter caramel coulis to celebrate Grandma's Birthday"
     },        
     {
         "name":"Last christmas",
-        "image":"images/quend.jpg",
+        "image":"images/neigemaison.jpg",
         "type": "memory",
-        "photograph":"Kang H",
-        "date":"25/04/1997",
-        "description":"lylyly"
+        "photograph":"Myriam K",
+        "date":"25/12/2022",
+        "description":"We got a white Christmas this Year, the whole house and the garden was covered in snow this year."
     },        
     {
-        "name":"I gave you",
-        "image":"images/quend.jpg",
+        "name":"New Electrical Panel",
+        "image":"images/electricity.jpg",
         "type": "event",
-        "photograph":"Sophia F",
-        "date":"25/04/1997",
-        "description":"lalalalal"
+        "photograph":"Sophie F",
+        "date":"20/05/2023",
+        "description":"Installation of the new elecrtical panel by Florent and Sophie to have the whole house in date with the new law."
     },        
     {
-        "name":"My Heart",
-        "image":"images/quend.jpg",
-        "type": "event",
+        "name":"Last Swim of the Year",
+        "image":"images/sunsetred.jpg",
+        "type": "memory",
         "photograph":"Francis B",
-        "date":"25/04/1997",
-        "description":"lolololo"
+        "date":"25/10/2022",
+        "description":"Soon it would be to cold to swim so we enjoy a last swim in the sea at sunset"
     },        
     {
-        "name":"But the very last day",
-        "image":"images/quend.jpg",
+        "name":"New Wall",
+        "image":"images/murext.jpg",
         "type": "event",
         "photograph":"Florent F",
-        "date":"25/04/1997",
-        "description":"lilili"
+        "date":"25/06/2020",
+        "description":"New cladding on the south-west façade of the house"
     },        
     {
-        "name":"You GAve it ",
+        "name":"Sunbeam",
         "image":"images/quend.jpg",
-        "type": "event",
-        "photograph":"Magali B",
-        "date":"25/04/1997",
-        "description":"lululu"
+        "type": "memory",
+        "photograph":"Flore B",
+        "date":"17/05/2014",
+        "description":"Ray of sunlight filtering through the clouds above the garden swing"
     },        
     {
-        "name":"Away",
-        "image":"images/quend.jpg",
-        "type": "event",
-        "photograph":"JB B",
-        "date":"25/04/1997",
-        "description":"lelelele"
+        "name":"The House",
+        "image":"images/house.jpg",
+        "type": "memory",
+        "photograph":"Camille F",
+        "date":"23/06/2000",
+        "description":"The House in the summer"
     }        
 ]
 }

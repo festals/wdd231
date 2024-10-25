@@ -32,7 +32,7 @@
     /*CTA*/
 
 
-    /* home page members*/
+    /* home page , memories*/
     main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -59,6 +59,15 @@
     .event h2{
         width:100%;
     }
+
+    #memory{
+        height:90%;
+        padding-left: 1.5rem;
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr)) ;
+        grid-template-rows: auto;
+    }
+
 
     #memories-info{
         width:600px;

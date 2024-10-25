@@ -35,9 +35,11 @@ const displayMemory = (memories) => {
         const memoryType = document.createElement("p")
 
         memoryImg.setAttribute("src", memory.image);
-        memoryImg.setAttribute("alt", "icon of sand yachting");
+        memoryImg.setAttribute("alt", memory.description);
         memoryImg.setAttribute("loading", "lazy");
-        // memoryImg.setAttribute("width", "550");
+        memoryImg.setAttribute("width", "400");
+        memoryImg.setAttribute("height", "400");
+        
     
         memoryType.innerHTML = memory.type;
         memoryName.innerHTML = memory.name;
