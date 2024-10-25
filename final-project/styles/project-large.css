@@ -126,6 +126,7 @@
     }
 
     .restaurant {
+        border-radius: 15px;
         display: grid;
         grid-column: 1/2;
         grid-row: 1/2;
@@ -137,12 +138,12 @@
         border: solid var(--light-blue) 2px;
     }
 
-    .restaurant img{
+    .restaurant img, .hike img{
         transform : scale(0.96);
         transition : transform 0.2s ease-in-out, border-radius 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     }
 
-    .restaurant img:hover{
+    .restaurant img:hover, .hike img:hover{
         transform : scale(1.2);
 
     }
@@ -157,21 +158,26 @@
         grid-row: 2/3;
     }
 
-
-
-    /* .pictures img{
-        transform : scale(0.96);
-        border-radius : 0;
-        box-shadow : 5px 5px 5px var(--light-blue);
-        transition : transform 0.2s ease-in-out, border-radius 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    .hike,.nature{
+        margin:0;
+    }
+    
+    .hike img{
+        border-radius: 0;
+        padding-left: 40%;
     }
 
+    .hike ul,.nature ul, .hike h4, .nature h4{
+        padding-left: 20%;
+    }
 
-    .pictures img:hover{
-        transform : scale(1);
-        box-shadow : none;
-    } */
+    .hike h3, .nature h3{
+        text-decoration: underline 2px;
+    }
 
+    iframe {
+        padding-left: 30%;
+    }
 
 
 

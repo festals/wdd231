@@ -1,7 +1,7 @@
 const memoriesJSON = "data/memories.json";
 
-const memo = document.getElementById("memory-button");
-const eventB = document.getElementById("event-button");
+// const memo = document.getElementById("memory-button");
+// const eventB = document.getElementById("event-button");
 
 // memo.addEventListener("click", () => {
 //     displayMemory(data.memories.filter(memory => memory.type === "memory"));

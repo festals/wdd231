@@ -312,24 +312,10 @@ nav.open{
     height: 80%;
 }
 
-#memory-button, #event-button{
-    border-radius: 15px;
-    padding: 1rem;
-    margin:5px;
-    font-weight: 700;
-    border: 2px solid var(--blue);
-    cursor : pointer;
-    background-color: var(--light-brown);
-}
-
-#memory-button:hover, #event-button:hover{
-    background-color : white;
-    transition : background-color 0.3s;
-}
-
 #memories-info {
     width : 80%;
     border-radius: 15px;
+    background-color: var(--light-brown);
 }
 
 #memories-info h2 {
@@ -469,8 +455,11 @@ textarea{
 /*activities*/
 .restaurant,.hike,.nature{
     margin:1rem;
+    padding: 0.7rem;
+
 }
-.restaurant li{
+
+.restaurant li,.hike li, .nature li{
     padding-left: 1rem;
 }
 
@@ -480,12 +469,19 @@ textarea{
     place-self: center;
 }
 
-.restaurant h3{
+.restaurant h3,.hike h3, .nature h3{
     text-align: center;
 }
 
-.restaurant p{
+.hike img{
+    padding: 1rem;
+    padding-left:25%;
+    border-radius: 100px ;
+}
+
+iframe{
     padding:1rem;
+    padding-left:15%;
 }
 
 
