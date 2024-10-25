@@ -467,6 +467,26 @@ textarea{
 
 
 /*activities*/
+.restaurant,.hike,.nature{
+    margin:1rem;
+}
+.restaurant li{
+    padding-left: 1rem;
+}
+
+.restaurant img{
+    display: grid;
+    margin: 1rem;
+    place-self: center;
+}
+
+.restaurant h3{
+    text-align: center;
+}
+
+.restaurant p{
+    padding:1rem;
+}
 
 
 

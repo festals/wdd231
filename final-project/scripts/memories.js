@@ -35,7 +35,6 @@ const displayMemory = (memories) => {
         const memoryImg = document.createElement("img")
         const memoryName = document.createElement("h3")
         const memoryButton = document.createElement("button")
-        const memoryType = document.createElement("p")
 
         memoryImg.setAttribute("src", memory.image);
         memoryImg.setAttribute("alt", memory.description);
@@ -44,13 +43,11 @@ const displayMemory = (memories) => {
         memoryImg.setAttribute("height", "400");
         
     
-        memoryType.innerHTML = memory.type;
         memoryName.innerHTML = memory.name;
         memoryButton.innerHTML = "See Details";
 
         card.classList.add(memory.memoryName);
         card.appendChild(memoryName);
-        card.appendChild(memoryType);
         card.appendChild(memoryButton);
         card.appendChild(memoryImg);
 

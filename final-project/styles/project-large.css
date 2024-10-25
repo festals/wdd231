@@ -107,20 +107,59 @@
 
 
 
-    /*discover*/
-    #discover{
+    /*activity*/
+    #activities{
+        padding-bottom: 6rem;
+    }
+
+    #activity{
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr auto;
         gap:10px;
     }
 
-    .pictures{
-        display: grid;
-        grid-column: 2/3;
+    #activity h1{
+        position:absolute;
+        bottom:55%;
+        left:3%;
     }
 
-    .pictures img{
+    .restaurant {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-items: center;
+    }
+
+    .restaurant div{
+        background-color: white;
+        border: solid var(--light-blue) 2px;
+    }
+
+    .restaurant img{
+        transform : scale(0.96);
+        transition : transform 0.2s ease-in-out, border-radius 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .restaurant img:hover{
+        transform : scale(1.2);
+
+    }
+
+    .hike{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .nature{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+
+
+    /* .pictures img{
         transform : scale(0.96);
         border-radius : 0;
         box-shadow : 5px 5px 5px var(--light-blue);
@@ -131,22 +170,8 @@
     .pictures img:hover{
         transform : scale(1);
         box-shadow : none;
-    }
+    } */
 
-    .about div{
-        display: grid;
-        margin: 1rem;
-        align-items: center;
-    }
-
-    .about p{
-        padding:1rem;
-    }
-
-    .about div{
-        background-color: white;
-        border: solid var(--light-blue) 2px;
-    }
 
 
 
